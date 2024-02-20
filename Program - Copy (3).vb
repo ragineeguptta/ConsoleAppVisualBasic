@@ -1,8 +1,8 @@
 Imports System
 Imports System.Security.Cryptography.X509Certificates
 
-Module Program
-    Sub Main(args As String())
+Module Program3
+    Sub Main3(args As String())
 
         'For Loop
         'For i As Integer = 1 To 4
