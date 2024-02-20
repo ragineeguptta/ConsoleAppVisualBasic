@@ -2,28 +2,33 @@ Imports System
 Imports System.Security.Cryptography.X509Certificates
 
 Module Program
-    Public Class [Class]
-        Public age As Integer
-    End Class
     Sub Main(args As String())
-        Dim id As Integer
-        Dim name As String = "Raginee Gupta"
-        Dim percentage As Double = 10.23
-        Dim gender As Char = "F"c
-        Dim isVerified As Boolean
-        id = 10
-        isVerified = True
+        Dim x As Integer = 5
+        Dim result As String
+        If x = 10 Then
+            Console.WriteLine("Wrong")
+        ElseIf x < 10 Then
+            Console.WriteLine("vALUE IS LESS THAN 10")
+        Else
+            Console.WriteLine("Again wrong value")
+        End If
 
+        'Ternary Operator
 
-        'Console.WriteLine("Id:{0}", id)
-        'Console.WriteLine("Name:{0}", name)
-        'Console.WriteLine("Percentage:{0}", percentage)
-        'Console.WriteLine("Gender:{0}", gender)
-        'Console.WriteLine("Verified:{0}", isVerified)
+        result = If((x = 5), "Right", "Wrong")
+        Console.WriteLine(result)
 
-        Dim p1 As [Class] = New [Class]()
-        p1.age = 20
-        Console.WriteLine("Age: " & p1.age)
+        'Select Case
+
+        Select Case x
+            Case 10
+                Console.WriteLine("Value is 10")
+            Case 5
+                Console.WriteLine("Value is 5")
+            Case Else
+                Console.WriteLine("Value is not satisfying")
+        End Select
+
         Console.ReadLine()
     End Sub
 End Module
