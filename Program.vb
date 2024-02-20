@@ -3,31 +3,36 @@ Imports System.Security.Cryptography.X509Certificates
 
 Module Program
     Sub Main(args As String())
-        Dim x As Integer = 5
-        Dim result As String
-        If x = 10 Then
-            Console.WriteLine("Wrong")
-        ElseIf x < 10 Then
-            Console.WriteLine("vALUE IS LESS THAN 10")
-        Else
-            Console.WriteLine("Again wrong value")
-        End If
 
-        'Ternary Operator
+        'For Loop
+        'For i As Integer = 1 To 4
+        '    Console.WriteLine("Value of i is {0}", i)
+        'Next
+        'Console.WriteLine("Press enter key to exit")
 
-        result = If((x = 5), "Right", "Wrong")
-        Console.WriteLine(result)
+        'While Loop
+        'Dim i As Integer = 1
+        'While i <= 4
+        '    Console.WriteLine("i value {0}", i)
+        '    i += 1
+        'End While
 
-        'Select Case
 
-        Select Case x
-            Case 10
-                Console.WriteLine("Value is 10")
-            Case 5
-                Console.WriteLine("Value is 5")
-            Case Else
-                Console.WriteLine("Value is not satisfying")
-        End Select
+        'Do While Loop
+        'Dim i As Integer = 5
+        'Do
+        '    Console.WriteLine("Vaule of i {0}", i)
+        '    i += 1
+        'Loop While i <= 14
+
+
+        'Foreach Loop with Array 
+        Dim names As String() = New String(2) {"Raginee", "Gunjan", "Shashi"}
+        For Each name As String In names
+            Console.WriteLine("My name is {0}", name)
+        Next
+
+        Console.WriteLine("Press enter key to exit")
 
         Console.ReadLine()
     End Sub
