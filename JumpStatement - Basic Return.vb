@@ -2,8 +2,8 @@ Imports System
 Imports System.Formats
 Imports System.Security.Cryptography.X509Certificates
 
-Module JumpStatement
-    Sub Main(args As String())
+Module JumpStatement4
+    Sub Main4(args As String())
         Dim i As Integer = 10, j As Integer = 20, result As Integer = 0
         result = SumofNumbers(i, j)
         Console.WriteLine("Result: {0}", result)
