@@ -5,7 +5,7 @@ Imports System.Security.Cryptography.X509Certificates
 Imports System.Array
 
 Module MultidimensionalArray
-    Sub Main(args As String())
+    Sub Main1(args As String())
 
         '' Two Dimensional Array
         'Dim arr As Integer(,) = New Integer(3, 1) {}
@@ -43,7 +43,7 @@ Module MultidimensionalArray
             Next
         Next
 
-            Console.WriteLine("Press Enter Key to Exit..")
+        Console.WriteLine("Press Enter Key to Exit..")
         Console.ReadLine()
 
 
